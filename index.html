@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Computación Científica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>PROBLEMAS C D</h1>
+
+<p><b>Desafío Final </b></p>
+
+<p>Realizaremos las opciones C y D</p>
+
+<hr>
+
+<h2> C. Panel solar</h2>
+
+<p><b>Modelo:</b> E = P · h · cos(θ)</p>
+
+<h3>Cálculo individual</h3>
+
+<p>
+Potencia (W):
+<input type="number" id="potencia">
+</p>
+
+<p>
+Horas de sol:
+<input type="number" id="horas">
+</p>
+
+<p>
+Ángulo (°):
+<input type="number" id="angulo">
+</p>
+
+<button type="button" onclick="calcularSolar()">
+Calcular energía
+</button>
+
+<p id="resultadoSolar"></p>
+
+
+<h3> Cinco pruebas del panel solar</h3>
+
+<p>
+Potencia:
+<input type="number" id="potenciaPrueba" value="400">
+</p>
+
+<p>
+Horas:
+<input type="number" id="horasPrueba" value="5">
+</p>
+
+<p>Ángulos:</p>
+
+<input type="number" id="angulo1" value="0">
+<input type="number" id="angulo2" value="15">
+<input type="number" id="angulo3" value="30">
+<input type="number" id="angulo4" value="45">
+<input type="number" id="angulo5" value="60">
+
+<br><br>
+
+<button type="button" onclick="pruebasSolar()">
+Realizar cinco pruebas
+</button>
+
+<table border="1">
+
+<tr>
+    <th>Prueba</th>
+    <th>Ángulo</th>
+    <th>Energía (Wh)</th>
+</tr>
+
+<tbody id="tablaSolar"></tbody>
+
+</table>
+
+
+<hr>
+
+
+<h2>D. Huerto urbano</h2>
+
+<p>
+Tenemos 40 metros de cerco y queremos encontrar
+las dimensiones que producen el área máxima.
+</p>
+
+<p><b>Modelo:</b> y = 20 - x</p>
+
+<p><b>Área:</b> A(x) = x(20 - x)</p>
+
+
+<h3>Cálculo individual</h3>
+
+<p>
+Largo x (m):
+<input type="number" id="largo">
+</p>
+
+<button type="button" onclick="calcularHuerto()">
+Calcular área
+</button>
+
+<p id="resultadoHuerto"></p>
+
+
+<h3> Cinco pruebas del huerto</h3>
+
+<p>Valores de x:</p>
+
+<input type="number" id="x1" value="2">
+<input type="number" id="x2" value="5">
+<input type="number" id="x3" value="8">
+<input type="number" id="x4" value="10">
+<input type="number" id="x5" value="15">
+
+<br><br>
+
+<button type="button" onclick="pruebasHuerto()">
+Realizar cinco pruebas
+</button>
+
+<table border="1">
+
+<tr>
+    <th>Prueba</th>
+    <th>Largo x</th>
+    <th>Ancho y</th>
+    <th>Área (m²)</th>
+</tr>
+
+<tbody id="tablaHuerto"></tbody>
+
+</table>
+
+
+<hr>
+
+
+<h2> Comparación y análisis</h2>
+
+<h3>Panel solar</h3>
+
+<p>
+La energía disminuye cuando aumenta el ángulo de desviación.
+</p>
+
+<p>
+La mayor energía se obtiene con un ángulo de <b>0°</b>.
+</p>
+
+<p>
+<b>Conjetura:</b> mientras mayor sea el ángulo,
+menor será la energía producida.
+</p>
+
+
+<h3>Huerto urbano</h3>
+
+<p>
+El área aumenta hasta alcanzar un máximo y después disminuye.
+</p>
+
+<ul>
+    <li>Largo = 10 m</li>
+    <li>Ancho = 10 m</li>
+    <li>Área máxima = 100 m²</li>
+</ul>
+
+<p>
+<b>Conjetura:</b> con 40 metros de cerco,
+el rectángulo de mayor área es un cuadrado de 10 m por 10 m.
+</p>
+
+
+<h2>📝 Conclusiones</h2>
+
+<p>
+En el panel solar, el modelo E = P · h · cos(θ)
+muestra que la energía disminuye cuando aumenta el ángulo.
+</p>
+
+<p>
+En el huerto urbano, con 40 metros de cerco,
+el área máxima es 100 m² con dimensiones de 10 m por 10 m.
+</p>
+
+<p>
+JavaScript permite realizar los cálculos y verificar
+diferentes valores rápidamente.
+</p>
+
+
+<h2>Limitaciones del modelo</h2>
+
+<p>
+El modelo del panel solar es teórico y no considera
+nubes, sombras, temperatura ni pérdidas del panel.
+</p>
+
+<p>
+En el huerto suponemos que el cerco mide 40 metros
+y que la figura es un rectángulo.
+</p>
+
+
+<script src="script1.js"></script>
+
+</body>
+</html>
+```

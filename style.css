@@ -1,0 +1,87 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf4fb;
+    color: #1f2933;
+    margin: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: #145a86;
+}
+
+h2 {
+    color: #176b9e;
+    border-bottom: 2px solid #7db7d9;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #247ba0;
+}
+
+p {
+    font-size: 16px;
+}
+
+input {
+    padding: 7px;
+    margin: 5px;
+    border: 1px solid #8bbbd6;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #247ba0;
+    color: white;
+    border: none;
+    padding: 9px 15px;
+    margin: 8px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #145a86;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: white;
+}
+
+th {
+    background-color: #247ba0;
+    color: white;
+    padding: 8px;
+}
+
+td {
+    border: 1px solid #8bbbd6;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #e3f1f8;
+}
+
+#resultadoSolar,
+#resultadoHuerto {
+    background-color: #d8edf8;
+    padding: 10px;
+    border-left: 4px solid #247ba0;
+    font-weight: bold;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #8bbbd6;
+    margin: 25px 0;
+}
+
+li {
+    margin: 5px;
+}
+```
